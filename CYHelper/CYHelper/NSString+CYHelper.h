@@ -7,6 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSString+Tokenize.h"
+//- (NSArray *)arrayWithWordTokenize;
+//- (NSString *)separatedStringWithSeparator:(NSString *)separator;
+
+
 @interface NSString (CYHelper)
 
 - (NSDictionary *)jsonObject;

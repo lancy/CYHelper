@@ -7,12 +7,8 @@
 //
 
 #import "CYHelperTests.h"
-#import "NSData+CYHelper.h"
-#import "NSString+CYHelper.h"
-#import "NSDictionary+CYHelper.h"
-#import "NSDate+CYHelper.h"
-#import "NSArray+CYHelper.h"
-#import "CYSystemInfo.h"
+#import "CYHelper.h"
+#import <objc/runtime.h>
 
 @implementation CYHelperTests
 
@@ -36,6 +32,8 @@
     [self dateHelperTest];
     [self arrayHelperTest];
     [self systemInfoTest];
+    [self runtimeTest];
+    [self stringTokenizeTest];
 }
 
 - (void)dataHelperTest
@@ -97,4 +95,38 @@
     NSLog(@"App Version = %@", [CYSystemInfo appVersion]);
     NSLog(@"Device Model = %@", [CYSystemInfo deviceModel]);
 }
+
+- (void)runtimeTest
+{
+    static char overviewKey;
+    NSArray *array = @[@"One", @"Two", @"Three"];
+    NSString *overview = @"First three numbers";
+    objc_setAssociatedObject (
+                              array,
+                              &overviewKey,
+                              overview,
+                              OBJC_ASSOCIATION_RETAIN
+                              );
+    
+    NSString *associatedObject =
+    (NSString *) objc_getAssociatedObject (array, &overviewKey);
+    NSLog(@"associatedObject: %@", associatedObject);
+    
+    objc_setAssociatedObject (
+                              array,
+                              &overviewKey,
+                              nil,
+                              OBJC_ASSOCIATION_ASSIGN
+                              );
+    
+
+}
+
+- (void)stringTokenizeTest
+{
+    NSString *string = @"Love the way you lie";
+    NSArray *array = [string arrayWithWordTokenize];
+    NSLog(@"%@", array);
+}
+
 @end
