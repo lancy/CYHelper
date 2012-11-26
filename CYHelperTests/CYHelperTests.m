@@ -12,6 +12,7 @@
 #import "NSDictionary+CYHelper.h"
 #import "NSDate+CYHelper.h"
 #import "NSArray+CYHelper.h"
+#import "CYSystemInfo.h"
 
 @implementation CYHelperTests
 
@@ -19,7 +20,6 @@
 {
     [super setUp];
     // Set-up code here.
-
 }
 
 - (void)tearDown
@@ -35,6 +35,7 @@
     [self jsonHelperTest];
     [self dateHelperTest];
     [self arrayHelperTest];
+    [self systemInfoTest];
 }
 
 - (void)dataHelperTest
@@ -88,5 +89,12 @@
     
     STAssertEqualObjects([array subarrayFromIndex:1], array2, @"array helper exception");
     STAssertEqualObjects([array subarrayToIndex:2], array3, @"array helper exception");
+}
+
+- (void)systemInfoTest
+{
+    NSLog(@"OS Version = %@",[CYSystemInfo osVersion]);
+    NSLog(@"App Version = %@", [CYSystemInfo appVersion]);
+    NSLog(@"Device Model = %@", [CYSystemInfo deviceModel]);
 }
 @end
