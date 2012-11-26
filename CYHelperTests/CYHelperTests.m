@@ -10,6 +10,7 @@
 #import "NSData+CYHelper.h"
 #import "NSString+CYHelper.h"
 #import "NSDictionary+CYHelper.h"
+#import "NSDate+CYHelper.h"
 
 @implementation CYHelperTests
 
@@ -31,6 +32,7 @@
 {
     [self dataHelperTest];
     [self jsonHelperTest];
+    [self dateHelperTest];
 }
 
 - (void)dataHelperTest
@@ -66,4 +68,10 @@
     
 }
 
+- (void)dateHelperTest
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:0];
+    NSLog(@"%@", [date stringWithDateFormat:@"yyyy/MM/dd"]);
+    STAssertEqualObjects([date stringWithDateFormat:@"yyyy/MM/dd"], @"1970/01/01", @"Date helper exception");
+}
 @end
