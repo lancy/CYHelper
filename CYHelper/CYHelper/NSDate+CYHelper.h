@@ -9,6 +9,9 @@
 
 @interface NSDate (CYHelper)
 
+
+// example: dateFormat:@"yyyy-MM-dd 'at' HH:mm";
+// formattedDateString: 2001-01-02 at 13:00
 - (NSString *)stringWithDateFormat:(NSString *)dateFormat;
 
 @end
