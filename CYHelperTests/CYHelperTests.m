@@ -34,6 +34,13 @@
     [self systemInfoTest];
     [self runtimeTest];
     [self stringTokenizeTest];
+    [self runtimeTest];
+    
+}
+
+- (void)test
+{
+
 }
 
 - (void)dataHelperTest
@@ -119,7 +126,7 @@
                               OBJC_ASSOCIATION_ASSIGN
                               );
     
-
+    [CYRuntimeHelper printCallStackWithCount:64];
 }
 
 - (void)stringTokenizeTest

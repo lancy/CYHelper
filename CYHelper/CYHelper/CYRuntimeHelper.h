@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <execinfo.h>
+
 
 @interface CYRuntimeHelper : NSObject
+
++ (void)printCallStackWithCount:(NSUInteger)count;
 
 @end
