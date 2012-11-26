@@ -11,6 +11,7 @@
 #import "NSString+CYHelper.h"
 #import "NSDictionary+CYHelper.h"
 #import "NSDate+CYHelper.h"
+#import "NSArray+CYHelper.h"
 
 @implementation CYHelperTests
 
@@ -33,6 +34,7 @@
     [self dataHelperTest];
     [self jsonHelperTest];
     [self dateHelperTest];
+    [self arrayHelperTest];
 }
 
 - (void)dataHelperTest
@@ -73,5 +75,17 @@
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:0];
     NSLog(@"%@", [date stringWithDateFormat:@"yyyy/MM/dd"]);
     STAssertEqualObjects([date stringWithDateFormat:@"yyyy/MM/dd"], @"1970/01/01", @"Date helper exception");
+}
+
+- (void)arrayHelperTest
+{
+    NSArray *array = @[@"1", @"2", @"3"];
+    NSLog(@"%@", [array subarrayFromIndex:1]);
+    NSLog(@"%@", [array subarrayToIndex:2]);
+    NSArray *array2 = @[@"2", @"3"];
+    NSArray *array3 = @[@"1", @"2"];
+    
+    STAssertEqualObjects([array subarrayFromIndex:1], array2, @"array helper exception");
+    STAssertEqualObjects([array subarrayToIndex:2], array3, @"array helper exception");
 }
 @end
