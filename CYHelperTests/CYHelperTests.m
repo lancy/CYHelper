@@ -8,6 +8,8 @@
 
 #import "CYHelperTests.h"
 #import "NSData+CYHelper.h"
+#import "NSString+CYHelper.h"
+#import "NSDictionary+CYHelper.h"
 
 @implementation CYHelperTests
 
@@ -27,19 +29,41 @@
 
 - (void)testExample
 {
-    [self NSDataHelperTest];
+    [self dataHelperTest];
+    [self jsonHelperTest];
 }
 
-- (void)NSDataHelperTest
+- (void)dataHelperTest
 {
     NSString *string = @"The quick brown fox jumps over the lazy dog";
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    STAssertEqualObjects([data MD5String], @"9e107d9d372bb6826bd81d3542a419d6", @"NSData + Helper MD5String exception");
+    STAssertEqualObjects([data MD5String], @"9E107D9D372BB6826BD81D3542A419D6", @"NSData + Helper MD5String exception");
     
     string = @"";
     data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    STAssertEqualObjects([data MD5String], @"d41d8cd98f00b204e9800998ecf8427e", @"NSData + Helper MD5String exception");
+    STAssertEqualObjects([data MD5String], @"D41D8CD98F00B204E9800998ECF8427E", @"NSData + Helper MD5String exception");
 
+}
+
+- (void)jsonHelperTest
+{
+    NSDictionary* info = @{
+        @"key1" : @"string",
+        @"key2" : @[@"1", @"2", @"3"],
+        @"key3" : @{
+                        @"key4" : @"OK",
+                        @"key5" : @"hello"
+                }
+    };
+    NSString *dicToString = [info jsonString];
+    NSDictionary *stringToDic = [dicToString jsonObject];
+    NSData *dicToData = [info jsonData];
+    NSDictionary *dataToDic = [dicToData jsonObject];
+
+    STAssertEqualObjects(info, dataToDic, @"JSON helper exception");
+    STAssertEqualObjects(info, stringToDic, @"JSON helper exception");
+    STAssertEqualObjects(dataToDic, stringToDic, @"Json helper exception");
+    
 }
 
 @end

@@ -52,4 +52,13 @@
     }
 }
 
+- (NSDictionary *)jsonObject
+{
+    NSError *error;
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:self options:kNilOptions error:&error];
+    return result;
+    
+}
+
+
 @end

@@ -7,10 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (CYHelper)
+@interface NSDictionary (CYHelper)
 
-- (NSData *)MD5;
-- (NSString *)MD5String;
-- (NSDictionary *)jsonObject;
+- (NSData *)jsonData;
+- (NSString *)jsonString;
+
 
 @end
+
