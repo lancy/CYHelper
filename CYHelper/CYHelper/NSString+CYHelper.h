@@ -10,5 +10,6 @@
 @interface NSString (CYHelper)
 
 - (NSDictionary *)jsonObject;
+- (NSString *)MD5String;
 
 @end

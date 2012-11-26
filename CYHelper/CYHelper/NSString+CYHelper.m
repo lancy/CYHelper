@@ -17,4 +17,10 @@
     return [data jsonObject];
 }
 
+- (NSString *)MD5String
+{
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [data MD5String];
+}
+
 @end
