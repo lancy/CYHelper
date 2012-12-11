@@ -40,20 +40,19 @@
 
 - (void)test
 {
-
 }
 
 - (void)dataHelperTest
 {
-    NSString *string = @"The quick brown fox jumps over the lazy dog";
-    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    STAssertEqualObjects([data MD5String], @"9E107D9D372BB6826BD81D3542A419D6", @"NSData + Helper MD5String exception");
-    STAssertEqualObjects([string MD5String], [data MD5String], @"NSString MD5String exception");
-    
-    string = @"";
-    data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    STAssertEqualObjects([data MD5String], @"D41D8CD98F00B204E9800998ECF8427E", @"NSData + Helper MD5String exception");
-
+//    NSString *string = @"The quick brown fox jumps over the lazy dog";
+//    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+//    STAssertEqualObjects([data MD5String], @"9E107D9D372BB6826BD81D3542A419D6", @"NSData + Helper MD5String exception");
+//    STAssertEqualObjects([string MD5String], [data MD5String], @"NSString MD5String exception");
+//    
+//    string = @"";
+//    data = [string dataUsingEncoding:NSUTF8StringEncoding];
+//    STAssertEqualObjects([data MD5String], @"D41D8CD98F00B204E9800998ECF8427E", @"NSData + Helper MD5String exception");
+//
 }
 
 - (void)jsonHelperTest
