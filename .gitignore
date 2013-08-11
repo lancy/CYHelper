@@ -17,3 +17,5 @@ profile
 DerivedData
 .idea/
 .DS_Store
+
+*.xcuserstate
