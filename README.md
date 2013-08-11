@@ -1,13 +1,19 @@
 #CYHelper
 ## About
 CYHelper is an Objective-C library for iOS developers. It's try to provides all the useful features of iOS and wrap them to be easy-to-use API.
+## Version 1.1
+What's new?
+
+* Perform block after delay
+* Create UIColor With RGBHex
+* Easy to access x, y, width, height of UIView.
+
 ## Requirements
 * iOS 5.0 or later
 * support ARC
 
 ## Installation
 Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
-
 
 ## Features
 * Easy to access subarray
@@ -19,8 +25,26 @@ Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise 
 * Runtime print call stack
 * Check OS version, app version, device model, UUID
 * Check whether device is jail broken
+* Perform block after delay
+* Create UIColor With RGBHex
+* Easy to access x, y, width, height of UIView.
 
 ## API List
+### NSObject + CYHelper.h (NEW)
+    - (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
+    
+### UIColor + CYHelper.h (NEW)
+    + (UIColor *)colorWithRGBHex:(UInt32)hex;
+    + (UIColor *)colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha;
+    
+### UIView + CYHelper.h (NEW)
+    @property (nonatomic, readwrite) CGFloat x;
+    @property (nonatomic, readwrite) CGFloat y;
+    @property (nonatomic, readwrite) CGFloat width;
+    @property (nonatomic, readwrite) CGFloat height;
+    @property (nonatomic, readwrite) CGSize size;
+
+
 ### NSArray + CYHelper.h
     - (NSArray *)subarrayFromIndex:(NSUInteger)index;
     - (NSArray *)subarrayToIndex:(NSUInteger)index;
