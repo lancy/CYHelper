@@ -1,18 +1,18 @@
 //
-//  GLViewController.m
+//  CYViewController.m
 //  CYHelperDemo
 //
-//  Created by Lancy on 16/4/13.
+//  Created by Lancy on 11/8/13.
 //  Copyright (c) 2013 GraceLancy. All rights reserved.
 //
 
-#import "GLViewController.h"
+#import "CYViewController.h"
 
-@interface GLViewController ()
+@interface CYViewController ()
 
 @end
 
-@implementation GLViewController
+@implementation CYViewController
 
 - (void)viewDidLoad
 {

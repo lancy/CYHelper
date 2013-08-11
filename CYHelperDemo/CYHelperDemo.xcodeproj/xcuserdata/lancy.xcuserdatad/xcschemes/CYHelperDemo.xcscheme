@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFBF9181171D0481007B7BCB"
+               BlueprintIdentifier = "BF6AB32D17B7360100E21D19"
                BuildableName = "CYHelperDemo.app"
                BlueprintName = "CYHelperDemo"
                ReferencedContainer = "container:CYHelperDemo.xcodeproj">
@@ -28,11 +28,21 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF6AB34E17B7360100E21D19"
+               BuildableName = "CYHelperDemoTests.xctest"
+               BlueprintName = "CYHelperDemoTests"
+               ReferencedContainer = "container:CYHelperDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFBF9181171D0481007B7BCB"
+            BlueprintIdentifier = "BF6AB32D17B7360100E21D19"
             BuildableName = "CYHelperDemo.app"
             BlueprintName = "CYHelperDemo"
             ReferencedContainer = "container:CYHelperDemo.xcodeproj">
@@ -51,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFBF9181171D0481007B7BCB"
+            BlueprintIdentifier = "BF6AB32D17B7360100E21D19"
             BuildableName = "CYHelperDemo.app"
             BlueprintName = "CYHelperDemo"
             ReferencedContainer = "container:CYHelperDemo.xcodeproj">
@@ -69,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFBF9181171D0481007B7BCB"
+            BlueprintIdentifier = "BF6AB32D17B7360100E21D19"
             BuildableName = "CYHelperDemo.app"
             BlueprintName = "CYHelperDemo"
             ReferencedContainer = "container:CYHelperDemo.xcodeproj">
