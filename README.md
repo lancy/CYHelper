@@ -6,7 +6,7 @@ What's new?
 
 * Perform block after delay
 * Create UIColor With RGBHex
-* Easy to access x, y, width, height of UIView.
+* Easy to access x, y, width, height and size of UIView.
 
 ## Requirements
 * iOS 5.0 or later
@@ -27,7 +27,7 @@ Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise 
 * Check whether device is jail broken
 * Perform block after delay
 * Create UIColor With RGBHex
-* Easy to access x, y, width, height of UIView.
+* Easy to access x, y, width, height and size of UIView.
 
 ## API List
 ### NSObject + CYHelper.h (NEW)
