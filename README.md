@@ -13,7 +13,7 @@ What's new?
 * support ARC
 
 ## Installation
-* Use Cocoapods to install CYHelper.
+* Use CocoaPods to install CYHelper.
 * Or simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
 
 ## Features
