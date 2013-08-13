@@ -16,4 +16,6 @@
 @property (nonatomic, readwrite) CGFloat height;
 @property (nonatomic, readwrite) CGSize size;
 
+- (void)removeAllSubviews;
+
 @end

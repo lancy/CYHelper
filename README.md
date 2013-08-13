@@ -1,9 +1,12 @@
 #CYHelper
 ## About
 CYHelper is an Objective-C library for iOS developer. It try to provides all the useful features of iOS and wrap them to be easy-to-use API.
-## Version 1.1
-What's new?
+## What's new?
+###1.1.1
+* Determind is iPhone or iPad
+* Remove all subviews of view
 
+###1.1.0
 * Perform block after delay
 * Create UIColor With RGBHex
 * Easy to access x, y, width, height and size of UIView.
@@ -29,6 +32,9 @@ What's new?
 * Perform block after delay
 * Create UIColor With RGBHex
 * Easy to access x, y, width, height and size of UIView.
+* Determind is iPhone or iPad
+* Remove all subviews of view
+
 
 ## API List
 ### NSObject + CYHelper.h (NEW)
@@ -44,6 +50,8 @@ What's new?
     @property (nonatomic, readwrite) CGFloat width;
     @property (nonatomic, readwrite) CGFloat height;
     @property (nonatomic, readwrite) CGSize size;
+    
+    - (void)removeAllSubviews;
 
 
 ### NSArray + CYHelper.h
@@ -66,11 +74,13 @@ What's new?
     - (NSArray *)arrayWithWordTokenize;
     - (NSString *)separatedStringWithSeparator:(NSString *)separator;
     
-### CYSystemInfo.h
+### CYSystemInfo.h (NEW)
     #define IOS6_OR_LATER	
     #define IOS5_OR_LATER	
     #define IOS4_OR_LATER
     #define IOS3_OR_LATER
+    #define IS_IPHONE
+    #define IS_IPAD
     
     + (NSString *)osVersion;
     + (NSString *)appVersion;
