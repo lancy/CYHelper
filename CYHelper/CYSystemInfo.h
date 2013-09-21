@@ -22,7 +22,6 @@
 + (NSString *)appVersion;
 
 + (NSString *)deviceModel;
-+ (NSString *)deviceUUID NS_DEPRECATED_IOS(2_0, 6_0);;
 
 + (BOOL)isJailBroken;
 + (NSString *)jailBreaker;

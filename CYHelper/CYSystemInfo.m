@@ -26,11 +26,6 @@
 	return [UIDevice currentDevice].model;
 }
 
-+ (NSString *)deviceUUID NS_DEPRECATED_IOS(2_0, 6_0);
-{
-	return [UIDevice currentDevice].uniqueIdentifier;
-}
-
 static const char * __jb_app = NULL;
 
 + (BOOL)isJailBroken

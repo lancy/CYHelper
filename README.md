@@ -27,7 +27,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Word Tokenization with string.
 * Singleton(sharedInstance Method) macro
 * Runtime print call stack
-* Check OS version, app version, device model, UUID
+* Check OS version, app version, device model
 * Check whether device is jail broken
 * Perform block after delay
 * Create UIColor With RGBHex
@@ -88,7 +88,6 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
     + (NSString *)appVersion;
     
     + (NSString *)deviceModel;
-    + (NSString *)deviceUUID NS_DEPRECATED_IOS(2_0, 6_0);;
     
     + (BOOL)isJailBroken;
     + (NSString *)jailBreaker;
