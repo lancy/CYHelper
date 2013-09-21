@@ -70,4 +70,27 @@
     self.frame = frame;
 }
 
+- (CGPoint) origin {
+    return self.frame.origin;
+}
+
+- (void) setOrigin:(CGPoint) point {
+    self.frame = CGRectMake(point.x, point.y, self.frame.size.width, self.frame.size.height);
+}
+
+- (CGFloat)bottom {
+    return self.y + self.height;
+}
+
+- (void)setBottom:(CGFloat)bottom {
+    self.frame = CGRectMake(self.x, bottom - self.height, self.width, self.height);
+}
+
+- (CGFloat)right {
+    return self.x + self.width;
+}
+
+- (void)setRight:(CGFloat)right {
+    self.frame = CGRectMake(right - self.width, self.y, self.width, self.height);
+}
 @end

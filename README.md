@@ -6,7 +6,7 @@ What's new?
 
 * Perform block after delay
 * Create UIColor With RGBHex
-* Easy to access x, y, width, height and size of UIView.
+* Easy to access x, y, width, height, right, bottom, origin and size of UIView.
 
 ## Requirements
 * iOS 5.0 or later
@@ -43,6 +43,9 @@ Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise 
     @property (nonatomic, readwrite) CGFloat width;
     @property (nonatomic, readwrite) CGFloat height;
     @property (nonatomic, readwrite) CGSize size;
+    @property (nonatomic, readwrite) CGPoint origin;
+    @property (nonatomic, readwrite) CGFloat bottom;
+    @property (nonatomic, readwrite) CGFloat right;
 
 
 ### NSArray + CYHelper.h
