@@ -93,4 +93,12 @@
 - (void)setRight:(CGFloat)right {
     self.frame = CGRectMake(right - self.width, self.y, self.width, self.height);
 }
+
+- (void)removeAllSubviews
+{
+    for (UIView *subview in self.subviews) {
+        [subview removeFromSuperview];
+    }
+}
+
 @end

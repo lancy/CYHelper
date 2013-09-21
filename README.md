@@ -1,9 +1,12 @@
 #CYHelper
 ## About
-CYHelper is an Objective-C library for iOS developers. It's try to provides all the useful features of iOS and wrap them to be easy-to-use API.
-## Version 1.1
-What's new?
+CYHelper is an Objective-C library for iOS developer. It try to provides all the useful features of iOS and wrap them to be easy-to-use API.
+## What's new?
+###1.1.1
+* Determind is iPhone or iPad
+* Remove all subviews of view
 
+###1.1.0
 * Perform block after delay
 * Create UIColor With RGBHex
 * Easy to access x, y, width, height, right, bottom, origin and size of UIView.
@@ -13,7 +16,8 @@ What's new?
 * support ARC
 
 ## Installation
-Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
+* Use CocoaPods to install CYHelper.
+* Or simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
 
 ## Features
 * Easy to access subarray
@@ -28,6 +32,9 @@ Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise 
 * Perform block after delay
 * Create UIColor With RGBHex
 * Easy to access x, y, width, height and size of UIView.
+* Determind is iPhone or iPad
+* Remove all subviews of view
+
 
 ## API List
 ### NSObject + CYHelper.h (NEW)
@@ -46,6 +53,7 @@ Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise 
     @property (nonatomic, readwrite) CGPoint origin;
     @property (nonatomic, readwrite) CGFloat bottom;
     @property (nonatomic, readwrite) CGFloat right;
+    - (void)removeAllSubviews;
 
 
 ### NSArray + CYHelper.h
@@ -68,11 +76,13 @@ Simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise 
     - (NSArray *)arrayWithWordTokenize;
     - (NSString *)separatedStringWithSeparator:(NSString *)separator;
     
-### CYSystemInfo.h
+### CYSystemInfo.h (NEW)
     #define IOS6_OR_LATER	
     #define IOS5_OR_LATER	
     #define IOS4_OR_LATER
     #define IOS3_OR_LATER
+    #define IS_IPHONE
+    #define IS_IPAD
     
     + (NSString *)osVersion;
     + (NSString *)appVersion;

@@ -19,5 +19,7 @@
 @property (nonatomic, readwrite) CGFloat bottom;
 @property (nonatomic, readwrite) CGFloat right;
 
+- (void)removeAllSubviews;
+
 @end
 
