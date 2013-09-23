@@ -11,6 +11,7 @@
 #import "NSDictionary+CYHelper.h"
 #import "NSDate+CYHelper.h"
 #import "NSArray+CYHelper.h"
+#import "NSNumber+CYHelper.h"
 #import "CYSystemInfo.h"
 #import "CYSingletonHelper.h"
 #import "CYRuntimeHelper.h"

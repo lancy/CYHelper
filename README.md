@@ -4,6 +4,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 ## What's new?
 ###1.1.2
 * Easy to post and observe notification to default notification center.
+* NSNumber simple calculation.
 
 ###1.1.0 - 1.1.1
 * Determind is iPhone or iPad
@@ -36,10 +37,22 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Easy to access x, y, width, height and size of UIView.
 * Determind is iPhone or iPad
 * Remove all subviews of view
+* NSNumber simple calculation.
 
 
 ## API List
-### NSObject+CYNotification.h (NEW)
+### NSNumber + CYHelper.h (NEW)
+    // DO NOT USE THEM when you have perfomace problem.
+    // These method convert NSNumber to NSDecimalNumber to process the calculation.
+    // I provide these methods just for convenience.
+    // NSDecimal(C-level) is much faster than NSDecimalNumber, can be a better choice.
+    - (NSNumber *)addNumber:(NSNumber *)number;
+    - (NSNumber *)subNumber:(NSNumber *)number;
+    - (NSNumber *)mulNumber:(NSNumber *)number;
+    - (NSNumber *)divNumber:(NSNumber *)number;
+    - (NSNumber *)modNumber:(NSNumber *)number;
+
+### NSObject + CYNotification.h (NEW)
     - (void)postNotificationName:(NSString *)notificationName;
     - (void)postNotificationName:(NSString *)notificationName userInfo:(NSDictionary *)userInfo;
     - (void)observeNotificationName:(NSString *)notificationName selector:(SEL)selector;
