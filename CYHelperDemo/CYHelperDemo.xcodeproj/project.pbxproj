@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2C108717F0666A00A8B693 /* NSObject+CYNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C108617F0666A00A8B693 /* NSObject+CYNotification.m */; };
 		BF6AB33217B7360100E21D19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33117B7360100E21D19 /* Foundation.framework */; };
 		BF6AB33417B7360100E21D19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33317B7360100E21D19 /* CoreGraphics.framework */; };
 		BF6AB33617B7360100E21D19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33517B7360100E21D19 /* UIKit.framework */; };
@@ -58,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF2C108517F0666A00A8B693 /* NSObject+CYNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYNotification.h"; sourceTree = "<group>"; };
+		BF2C108617F0666A00A8B693 /* NSObject+CYNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYNotification.m"; sourceTree = "<group>"; };
 		BF6AB32E17B7360100E21D19 /* CYHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6AB33117B7360100E21D19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF6AB33317B7360100E21D19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				BF6AB36717B7361C00E21D19 /* CYHelper.h */,
+				BF2C108517F0666A00A8B693 /* NSObject+CYNotification.h */,
+				BF2C108617F0666A00A8B693 /* NSObject+CYNotification.m */,
 				BF6AB36817B7361C00E21D19 /* CYRuntimeHelper.h */,
 				BF6AB36917B7361C00E21D19 /* CYRuntimeHelper.m */,
 				BF6AB36A17B7361C00E21D19 /* CYSingletonHelper.h */,
@@ -347,6 +352,7 @@
 				BF6AB34217B7360100E21D19 /* CYAppDelegate.m in Sources */,
 				BF6AB39717B7397100E21D19 /* UIView+CYHelper.m in Sources */,
 				BF6AB38B17B7361C00E21D19 /* NSString+Tokenize.m in Sources */,
+				BF2C108717F0666A00A8B693 /* NSObject+CYNotification.m in Sources */,
 				BF6AB38517B7361C00E21D19 /* NSDictionary+CYHelper.m in Sources */,
 				BF6AB38717B7361C00E21D19 /* NSNumber+CYHelper.m in Sources */,
 				BF6AB38917B7361C00E21D19 /* NSString+CYHelper.m in Sources */,
@@ -566,6 +572,7 @@
 				BF6AB36217B7360100E21D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6AB36317B7360100E21D19 /* Build configuration list for PBXNativeTarget "CYHelperDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +581,7 @@
 				BF6AB36517B7360100E21D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

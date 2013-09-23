@@ -2,11 +2,12 @@
 ## About
 CYHelper is an Objective-C library for iOS developer. It try to provides all the useful features of iOS and wrap them to be easy-to-use API.
 ## What's new?
-###1.1.1
+###1.1.2
+* Easy to post and observe notification to default notification center.
+
+###1.1.0 - 1.1.1
 * Determind is iPhone or iPad
 * Remove all subviews of view
-
-###1.1.0
 * Perform block after delay
 * Create UIColor With RGBHex
 * Easy to access x, y, width, height, right, bottom, origin and size of UIView.
@@ -37,6 +38,12 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 
 
 ## API List
+### NSObject+CYNotification.h (NEW)
+    - (void)postNotificationName:(NSString *)notificationName;
+    - (void)postNotificationName:(NSString *)notificationName userInfo:(NSDictionary *)userInfo;
+    - (void)observeNotificationName:(NSString *)notificationName selector:(SEL)selector;
+    - (void)unObserveNotificationName:(NSString *)notificationName;
+
 ### NSObject + CYHelper.h (NEW)
     - (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
     

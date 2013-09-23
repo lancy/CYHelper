@@ -17,3 +17,4 @@
 #import "NSObject+CYHelper.h"
 #import "UIColor+CYHelper.h"
 #import "UIView+CYHelper.h"
+#import "NSObject+CYNotification.h"
