@@ -21,6 +21,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Or simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
 
 ## Features
+* Easy to post and observe notification to default notification center.
 * Easy to access subarray
 * Convert date to string with date format
 * JSON Serialization with NSData, NSString, NSDictionary
