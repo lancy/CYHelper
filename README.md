@@ -22,7 +22,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Check whether device is jail broken
 * Perform block after delay
 * Create UIColor With RGBHex
-* Easy to access x, y, width, height and size of UIView.
+* Easy to access x, y, width, height, right, bottom, origin and size of UIView.
 * Determind is iPhone or iPad
 * Remove all subviews of view
 * NSNumber simple calculation.
