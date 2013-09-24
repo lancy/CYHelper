@@ -19,3 +19,7 @@
 #import "UIColor+CYHelper.h"
 #import "UIView+CYHelper.h"
 #import "NSObject+CYNotification.h"
+#import "NSObject+AssociatedObjects.h"
+#import "UIAlertView+CYHelper.h"
+#import "UIActionSheet+CYHelper.h"
+#import "UIControl+CYHelper.h"
