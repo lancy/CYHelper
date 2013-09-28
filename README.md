@@ -115,6 +115,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
     - (NSString *)separatedStringWithSeparator:(NSString *)separator;
     
 ### CYSystemInfo.h (NEW)
+    #define IOS7_OR_LATER	
     #define IOS6_OR_LATER	
     #define IOS5_OR_LATER	
     #define IOS4_OR_LATER
