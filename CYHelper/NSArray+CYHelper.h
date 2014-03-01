@@ -12,4 +12,7 @@
 - (NSArray *)subarrayFromIndex:(NSUInteger)index;
 - (NSArray *)subarrayToIndex:(NSUInteger)index;
 
+- (NSArray *)mapWithBlock:(id (^)(id value))handlerBlock;
+- (NSArray *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
+
 @end
