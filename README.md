@@ -3,9 +3,8 @@
 CYHelper is an Objective-C library for iOS developer. It try to provides all the useful features of iOS and wrap them to be easy-to-use API.
 
 ## What's new?
-###1.1.3
-* Easy to associcate objects.
-* Attach userinfo to UIAlertView, UIActionSheet, UIControl
+###1.1.4
+* Easy to access x, y, centerY, centerX, width, height, right, bottom, origin and size of UIView.
 
 ## Features
 * Easy to associcated objects.
@@ -22,7 +21,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Check whether device is jail broken
 * Perform block after delay
 * Create UIColor With RGBHex
-* Easy to access x, y, width, height, right, bottom, origin and size of UIView.
+* Easy to access x, y, centerY, centerX, width, height, right, bottom, origin and size of UIView.
 * Determind is iPhone or iPad
 * Remove all subviews of view
 * NSNumber simple calculation.
@@ -36,13 +35,13 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Or simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
 
 ## API List
-### UIAlertView + CYHelper.h (NEW)
+### UIAlertView + CYHelper.h
     @property (strong, nonatomic) NSDictionary *userInfo;
-### UIActionView + CYHelper.h (NEW)
+### UIActionView + CYHelper.h
     @property (strong, nonatomic) NSDictionary *userInfo;
-### UIControl + CYHelper.h (NEW)
+### UIControl + CYHelper.h
     @property (strong, nonatomic) NSDictionary *userInfo;
-### NSObject + AssociatedObjects.h (NEW)
+### NSObject + AssociatedObjects.h
     - (void)associateValue:(id)value withKey:(const void *)key;
     - (void)atomicallyAssociateValue:(id)value withKey:(const void *)key;
     - (void)associateCopyOfValue:(id)value withKey:(const void *)key;
@@ -84,14 +83,16 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
     + (UIColor *)colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha;
     
 ### UIView + CYHelper.h
-    @property (nonatomic, readwrite) CGFloat x;
-    @property (nonatomic, readwrite) CGFloat y;
-    @property (nonatomic, readwrite) CGFloat width;
-    @property (nonatomic, readwrite) CGFloat height;
-    @property (nonatomic, readwrite) CGSize size;
-    @property (nonatomic, readwrite) CGPoint origin;
-    @property (nonatomic, readwrite) CGFloat bottom;
-    @property (nonatomic, readwrite) CGFloat right;
+    @property (nonatomic) CGFloat x;
+    @property (nonatomic) CGFloat y;
+    @property (nonatomic) CGFloat width;
+    @property (nonatomic) CGFloat height;
+    @property (nonatomic) CGSize size;
+    @property (nonatomic) CGPoint origin;
+    @property (nonatomic) CGFloat bottom;
+    @property (nonatomic) CGFloat right;
+    @property (nonatomic) CGFloat centerX;
+    @property (nonatomic) CGFloat centerY;
     - (void)removeAllSubviews;
 
 ### NSArray + CYHelper.h

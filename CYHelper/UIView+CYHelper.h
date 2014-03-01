@@ -10,14 +10,16 @@
 
 @interface UIView (CYHelper)
 
-@property (nonatomic, readwrite) CGFloat x;
-@property (nonatomic, readwrite) CGFloat y;
-@property (nonatomic, readwrite) CGFloat width;
-@property (nonatomic, readwrite) CGFloat height;
-@property (nonatomic, readwrite) CGSize size;
-@property (nonatomic, readwrite) CGPoint origin;
-@property (nonatomic, readwrite) CGFloat bottom;
-@property (nonatomic, readwrite) CGFloat right;
+@property (nonatomic) CGFloat x;
+@property (nonatomic) CGFloat y;
+@property (nonatomic) CGFloat width;
+@property (nonatomic) CGFloat height;
+@property (nonatomic) CGSize size;
+@property (nonatomic) CGPoint origin;
+@property (nonatomic) CGFloat bottom;
+@property (nonatomic) CGFloat right;
+@property (nonatomic) CGFloat centerX;
+@property (nonatomic) CGFloat centerY;
 
 - (void)removeAllSubviews;
 
