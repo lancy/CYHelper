@@ -4,7 +4,9 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 
 ## What's new?
 ###1.1.4
-* Easy to access x, y, centerY, centerX, width, height, right, bottom, origin and size of UIView.
+* Easy to access centerY and centerX of UIView.
+* Days with in era from date to date.
+
 
 ## Features
 * Easy to associcated objects.
@@ -98,10 +100,11 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 ### NSArray + CYHelper.h
     - (NSArray *)subarrayFromIndex:(NSUInteger)index;
     - (NSArray *)subarrayToIndex:(NSUInteger)index;
-### NSDate + CYHelper.h 
+### NSDate + CYHelper.h (NEW)
     // example: dateFormat:@"yyyy-MM-dd 'at' HH:mm";
     // formattedDateString: 2001-01-02 at 13:00
     - (NSString *)stringWithDateFormat:(NSString *)dateFormat;
+    - (NSInteger)daysWithinEraToDate:(NSDate *)toDate;
 ### NSDictionary + CYHelper.h
     - (NSData *)jsonData;
     - (NSString *)jsonString;
