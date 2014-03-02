@@ -11,6 +11,8 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeLog.md)
 
 ## Features
+* NSArray and NSSet utils: map, filter and reject with block, flattenArray.
+* Days with in era from date to date.
 * Easy to associcated objects.
 * Attach userinfo to UIAlertView, UIActionSheet, UIControl
 * Easy to post and observe notification to default notification center.
