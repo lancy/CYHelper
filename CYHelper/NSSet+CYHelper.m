@@ -11,15 +11,15 @@
 
 @implementation NSSet (CYHelper)
 
-- (NSSet *)mapWithBlock:(id (^)(id value))handlerBlock {
+- (NSSet *)map:(id (^)(id value))handlerBlock {
     return [CYHelperPrivate cy_mapCollection:self block:handlerBlock];
 }
 
-- (NSSet *)filterWithBlock:(BOOL (^)(id value))handlerBlock {
+- (NSSet *)filter:(BOOL (^)(id value))handlerBlock {
     return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:YES];
 }
 
-- (NSSet *)rejectWithBlock:(BOOL (^)(id value))handlerBlock {
+- (NSSet *)reject:(BOOL (^)(id value))handlerBlock {
     return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:NO];
 }
 @end

@@ -22,16 +22,28 @@
     return [self subarrayWithRange:range];
 }
 
-- (NSArray *)mapWithBlock:(id (^)(id value))handlerBlock {
+- (NSArray *)map:(id (^)(id value))handlerBlock {
     return [CYHelperPrivate cy_mapCollection:self block:handlerBlock];
 }
 
-- (NSArray *)filterWithBlock:(BOOL (^)(id value))handlerBlock {
+- (NSArray *)filter:(BOOL (^)(id value))handlerBlock {
     return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:YES];
 }
 
-- (NSArray *)rejectWithBlock:(BOOL (^)(id value))handlerBlock {
+- (NSArray *)reject:(BOOL (^)(id value))handlerBlock {
     return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:NO];
+}
+
+- (NSArray *)flattenArray {
+    NSMutableArray *result = [NSMutableArray array];
+    for (id object in self) {
+        if ([object isKindOfClass:[NSArray class]]) {
+            [result addObjectsFromArray:[object flattenArray]];
+        } else {
+            [result addObject:object];
+        }
+    }
+    return result;
 }
 
 @end

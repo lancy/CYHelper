@@ -10,8 +10,8 @@
 
 @interface NSSet (CYHelper)
 
-- (NSSet *)mapWithBlock:(id (^)(id value))handlerBlock;
-- (NSSet *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
-- (NSSet *)rejectWithBlock:(BOOL (^)(id value))handlerBlock;
+- (NSSet *)map:(id (^)(id value))handlerBlock;
+- (NSSet *)filter:(BOOL (^)(id value))handlerBlock;
+- (NSSet *)reject:(BOOL (^)(id value))handlerBlock;
 
 @end

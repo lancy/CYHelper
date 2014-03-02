@@ -1,7 +1,7 @@
 # Change Log
 
 ###1.1.4
-* NSArray and NSSet map and filter with block.
+* NSArray and NSSet utils: map, filter and reject with block, flattenArray.
 * Easy to access centerY and centerX of UIView.
 * Days with in era from date to date.
 

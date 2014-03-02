@@ -4,7 +4,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 
 ## What's new?
 ###1.1.4
-* NSArray and NSSet map, filter and reject with block.
+* NSArray and NSSet utils: map, filter and reject with block, flattenArray.
 * Easy to access centerY and centerX of UIView.
 * Days with in era from date to date.
 
@@ -102,13 +102,14 @@ See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeL
 ### NSArray + CYHelper.h (NEW)
     - (NSArray *)subarrayFromIndex:(NSUInteger)index;
     - (NSArray *)subarrayToIndex:(NSUInteger)index;
-    - (NSArray *)mapWithBlock:(id (^)(id value))handlerBlock;
-    - (NSArray *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
-    - (NSSet *)rejectWithBlock:(BOOL (^)(id value))handlerBlock;
+    - (NSArray *)map:(id (^)(id value))handlerBlock;
+    - (NSArray *)filter:(BOOL (^)(id value))handlerBlock;
+    - (NSArray *)reject:(BOOL (^)(id value))handlerBlock;
+    - (NSArray *)flattenArray;
 ### NSSet + CYHelper.h (NEW)
-    - (NSSet *)mapWithBlock:(id (^)(id value))handlerBlock;
-    - (NSSet *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
-    - (NSSet *)rejectWithBlock:(BOOL (^)(id value))handlerBlock;
+    - (NSSet *)map:(id (^)(id value))handlerBlock;
+    - (NSSet *)filter:(BOOL (^)(id value))handlerBlock;
+    - (NSSet *)reject:(BOOL (^)(id value))handlerBlock;
 ### NSDate + CYHelper.h (NEW)
     // example: dateFormat:@"yyyy-MM-dd 'at' HH:mm";
     // formattedDateString: 2001-01-02 at 13:00

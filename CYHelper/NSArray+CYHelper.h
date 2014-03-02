@@ -12,8 +12,9 @@
 - (NSArray *)subarrayFromIndex:(NSUInteger)index;
 - (NSArray *)subarrayToIndex:(NSUInteger)index;
 
-- (NSArray *)mapWithBlock:(id (^)(id value))handlerBlock;
-- (NSArray *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
-- (NSArray *)rejectWithBlock:(BOOL (^)(id value))handlerBlock;
+- (NSArray *)map:(id (^)(id value))handlerBlock;
+- (NSArray *)filter:(BOOL (^)(id value))handlerBlock;
+- (NSArray *)reject:(BOOL (^)(id value))handlerBlock;
+- (NSArray *)flattenArray;
 
 @end

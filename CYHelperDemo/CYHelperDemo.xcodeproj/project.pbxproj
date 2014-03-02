@@ -12,7 +12,7 @@
 		BF2C108D17F1272E00A8B693 /* UIAlertView+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C108C17F1272E00A8B693 /* UIAlertView+CYHelper.m */; };
 		BF2C109017F1292900A8B693 /* UIActionSheet+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C108F17F1292900A8B693 /* UIActionSheet+CYHelper.m */; };
 		BF2C109317F12A2E00A8B693 /* UIControl+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C109217F12A2E00A8B693 /* UIControl+CYHelper.m */; };
-		BF32A38B18C24F8900F9F239 /* CYHelperMapFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32A38A18C24F8900F9F239 /* CYHelperMapFilterTests.m */; };
+		BF32A38B18C24F8900F9F239 /* CYHelperCollectionUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32A38A18C24F8900F9F239 /* CYHelperCollectionUtilsTests.m */; };
 		BF32A38E18C2529200F9F239 /* NSSet+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32A38D18C2529200F9F239 /* NSSet+CYHelper.m */; };
 		BF32A39018C2DB1500F9F239 /* ChangeLog.md in Resources */ = {isa = PBXBuildFile; fileRef = BF32A38F18C2DB1500F9F239 /* ChangeLog.md */; };
 		BF6AB33217B7360100E21D19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33117B7360100E21D19 /* Foundation.framework */; };
@@ -77,7 +77,7 @@
 		BF2C108F17F1292900A8B693 /* UIActionSheet+CYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+CYHelper.m"; sourceTree = "<group>"; };
 		BF2C109117F12A2D00A8B693 /* UIControl+CYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CYHelper.h"; sourceTree = "<group>"; };
 		BF2C109217F12A2E00A8B693 /* UIControl+CYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CYHelper.m"; sourceTree = "<group>"; };
-		BF32A38A18C24F8900F9F239 /* CYHelperMapFilterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHelperMapFilterTests.m; sourceTree = "<group>"; };
+		BF32A38A18C24F8900F9F239 /* CYHelperCollectionUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHelperCollectionUtilsTests.m; sourceTree = "<group>"; };
 		BF32A38C18C2529200F9F239 /* NSSet+CYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CYHelper.h"; sourceTree = "<group>"; };
 		BF32A38D18C2529200F9F239 /* NSSet+CYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CYHelper.m"; sourceTree = "<group>"; };
 		BF32A38F18C2DB1500F9F239 /* ChangeLog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog.md; path = ../ChangeLog.md; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				BF6AB35C17B7360100E21D19 /* CYHelperDemoTests.m */,
-				BF32A38A18C24F8900F9F239 /* CYHelperMapFilterTests.m */,
+				BF32A38A18C24F8900F9F239 /* CYHelperCollectionUtilsTests.m */,
 				BF6AB35717B7360100E21D19 /* Supporting Files */,
 			);
 			path = CYHelperDemoTests;
@@ -429,7 +429,7 @@
 				BF6AB38217B7361C00E21D19 /* NSData+CYHelper.m in Sources */,
 				BF6AB35D17B7360100E21D19 /* CYHelperDemoTests.m in Sources */,
 				BF6AB38817B7361C00E21D19 /* NSNumber+CYHelper.m in Sources */,
-				BF32A38B18C24F8900F9F239 /* CYHelperMapFilterTests.m in Sources */,
+				BF32A38B18C24F8900F9F239 /* CYHelperCollectionUtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
