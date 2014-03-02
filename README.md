@@ -8,6 +8,7 @@ CYHelper is an Objective-C library for iOS developer. It try to provides all the
 * Easy to access centerY and centerX of UIView.
 * Days with in era from date to date.
 
+See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeLog.md)
 
 ## Features
 * Easy to associcated objects.

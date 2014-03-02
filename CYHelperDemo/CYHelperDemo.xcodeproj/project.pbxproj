@@ -14,6 +14,7 @@
 		BF2C109317F12A2E00A8B693 /* UIControl+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C109217F12A2E00A8B693 /* UIControl+CYHelper.m */; };
 		BF32A38B18C24F8900F9F239 /* CYHelperMapFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32A38A18C24F8900F9F239 /* CYHelperMapFilterTests.m */; };
 		BF32A38E18C2529200F9F239 /* NSSet+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32A38D18C2529200F9F239 /* NSSet+CYHelper.m */; };
+		BF32A39018C2DB1500F9F239 /* ChangeLog.md in Resources */ = {isa = PBXBuildFile; fileRef = BF32A38F18C2DB1500F9F239 /* ChangeLog.md */; };
 		BF6AB33217B7360100E21D19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33117B7360100E21D19 /* Foundation.framework */; };
 		BF6AB33417B7360100E21D19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33317B7360100E21D19 /* CoreGraphics.framework */; };
 		BF6AB33617B7360100E21D19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AB33517B7360100E21D19 /* UIKit.framework */; };
@@ -78,6 +79,7 @@
 		BF32A38A18C24F8900F9F239 /* CYHelperMapFilterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHelperMapFilterTests.m; sourceTree = "<group>"; };
 		BF32A38C18C2529200F9F239 /* NSSet+CYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CYHelper.h"; sourceTree = "<group>"; };
 		BF32A38D18C2529200F9F239 /* NSSet+CYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CYHelper.m"; sourceTree = "<group>"; };
+		BF32A38F18C2DB1500F9F239 /* ChangeLog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog.md; path = ../ChangeLog.md; sourceTree = "<group>"; };
 		BF6AB32E17B7360100E21D19 /* CYHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6AB33117B7360100E21D19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF6AB33317B7360100E21D19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 		BF6AB32517B7360100E21D19 = {
 			isa = PBXGroup;
 			children = (
+				BF32A38F18C2DB1500F9F239 /* ChangeLog.md */,
 				BF6AB39917B739B600E21D19 /* README.md */,
 				BF6AB36617B7361C00E21D19 /* CYHelper */,
 				BF6AB33717B7360100E21D19 /* CYHelperDemo */,
@@ -360,6 +363,7 @@
 				BF6AB34A17B7360100E21D19 /* Images.xcassets in Resources */,
 				BF6AB33C17B7360100E21D19 /* InfoPlist.strings in Resources */,
 				BF6AB34517B7360100E21D19 /* Main.storyboard in Resources */,
+				BF32A39018C2DB1500F9F239 /* ChangeLog.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
