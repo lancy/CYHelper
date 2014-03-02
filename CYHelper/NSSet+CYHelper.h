@@ -12,5 +12,6 @@
 
 - (NSSet *)mapWithBlock:(id (^)(id value))handlerBlock;
 - (NSSet *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
+- (NSSet *)rejectWithBlock:(BOOL (^)(id value))handlerBlock;
 
 @end

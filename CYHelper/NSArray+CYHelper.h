@@ -14,5 +14,6 @@
 
 - (NSArray *)mapWithBlock:(id (^)(id value))handlerBlock;
 - (NSArray *)filterWithBlock:(BOOL (^)(id value))handlerBlock;
+- (NSArray *)rejectWithBlock:(BOOL (^)(id value))handlerBlock;
 
 @end

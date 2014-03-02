@@ -7,24 +7,19 @@
 //
 
 #import "NSSet+CYHelper.h"
+#import "CYHelperPrivate.h"
 
 @implementation NSSet (CYHelper)
 
 - (NSSet *)mapWithBlock:(id (^)(id value))handlerBlock {
-    NSMutableSet *result = [NSMutableSet set];
-    for (id value in self) {
-        [result addObject:handlerBlock(value)];
-    }
-    return result;
+    return [CYHelperPrivate cy_mapCollection:self block:handlerBlock];
 }
 
 - (NSSet *)filterWithBlock:(BOOL (^)(id value))handlerBlock {
-    NSMutableSet *result = [NSMutableSet set];
-    for (id value in self) {
-        if (handlerBlock(value) == NO) {
-            [result addObject:value];
-        }
-    }
-    return result;
+    return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:YES];
+}
+
+- (NSSet *)rejectWithBlock:(BOOL (^)(id value))handlerBlock {
+    return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:NO];
 }
 @end

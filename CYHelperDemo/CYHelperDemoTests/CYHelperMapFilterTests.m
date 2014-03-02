@@ -34,6 +34,7 @@
     NSArray *result = [arr mapWithBlock:^id(id value) {
         return @([value length]);
     }];
+    XCTAssertTrue([result isKindOfClass:[NSArray class]], @"array filter with block test faild: result is not a array");
     for (NSInteger i = 0; i < arr.count; i++) {
         XCTAssertEqualObjects(result[i], correctArray[i], @"map with block test faild.");
     }
@@ -42,6 +43,7 @@
     NSSet *resultSet = [set mapWithBlock:^id(id value) {
         return @([value length]);
     }];
+    XCTAssertTrue([resultSet isKindOfClass:[NSSet class]], @"set filter with block test faild: result is not a set");
     NSSet *correctSet = [NSSet setWithArray:correctArray];
     for (id value in correctSet) {
         XCTAssertTrue([resultSet containsObject:value], @"map with block test faild");
@@ -52,19 +54,43 @@
     NSArray *arr = @[@"hello", @"world", @"this", @"is", @"a", @"test"];
     NSArray *correctArray = @[@"hello", @"world", @"this", @"test"];
     NSArray *result = [arr filterWithBlock:^BOOL(id value) {
-        return [value length] < 3;
+        return [value length] > 3;
     }];
+    XCTAssertTrue([result isKindOfClass:[NSArray class]], @"array filter with block test faild: result is not a array");
     for (NSInteger i = 0; i < correctArray.count; i++) {
-        XCTAssertEqualObjects(result[i], correctArray[i], @"filter with block test faild.");
+        XCTAssertEqualObjects(result[i], correctArray[i], @"array filter with block test faild.");
     }
     
     NSSet *set = [NSSet setWithArray:arr];
     NSSet *resultSet = [set filterWithBlock:^BOOL(id value) {
-        return [value length] < 3;
+        return [value length] > 3;
     }];
+    XCTAssertTrue([resultSet isKindOfClass:[NSSet class]], @"set filter with block test faild: result is not a set");
     NSSet *correctSet = [NSSet setWithArray:correctArray];
     for (id value in correctSet) {
-        XCTAssertTrue([resultSet containsObject:value], @"filter with block test faild");
+        XCTAssertTrue([resultSet containsObject:value], @"set filter with block test faild");
+    }
+}
+
+- (void)testRejectWithBlock {
+    NSArray *arr = @[@"hello", @"world", @"this", @"is", @"a", @"test"];
+    NSArray *correctArray = @[@"hello", @"world", @"this", @"test"];
+    NSArray *result = [arr rejectWithBlock:^BOOL(id value) {
+        return [value length] <= 3;
+    }];
+    XCTAssertTrue([result isKindOfClass:[NSArray class]], @"array filter with block test faild: result is not a array");
+    for (NSInteger i = 0; i < correctArray.count; i++) {
+        XCTAssertEqualObjects(result[i], correctArray[i], @"array filter with block test faild.");
+    }
+    
+    NSSet *set = [NSSet setWithArray:arr];
+    NSSet *resultSet = [set rejectWithBlock:^BOOL(id value) {
+        return [value length] <= 3;
+    }];
+    XCTAssertTrue([resultSet isKindOfClass:[NSSet class]], @"set filter with block test faild: result is not a set");
+    NSSet *correctSet = [NSSet setWithArray:correctArray];
+    for (id value in correctSet) {
+        XCTAssertTrue([resultSet containsObject:value], @"set filter with block test faild");
     }
 }
 

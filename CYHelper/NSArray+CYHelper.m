@@ -6,6 +6,7 @@
 
 
 #import "NSArray+CYHelper.h"
+#import "CYHelperPrivate.h"
 
 
 @implementation NSArray (CYHelper)
@@ -22,21 +23,15 @@
 }
 
 - (NSArray *)mapWithBlock:(id (^)(id value))handlerBlock {
-    NSMutableArray *result = [NSMutableArray array];
-    for (id value in self) {
-        [result addObject:handlerBlock(value)];
-    }
-    return result;
+    return [CYHelperPrivate cy_mapCollection:self block:handlerBlock];
 }
 
 - (NSArray *)filterWithBlock:(BOOL (^)(id value))handlerBlock {
-    NSMutableArray *result = [NSMutableArray array];
-    for (id value in self) {
-        if (handlerBlock(value) == NO) {
-            [result addObject:value];
-        }
-    }
-    return result;
+    return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:YES];
+}
+
+- (NSArray *)rejectWithBlock:(BOOL (^)(id value))handlerBlock {
+    return [CYHelperPrivate cy_filterCollection:self block:handlerBlock filterToggle:NO];
 }
 
 @end

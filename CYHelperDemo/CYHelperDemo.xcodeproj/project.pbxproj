@@ -53,6 +53,7 @@
 		BF6AB39417B737CB00E21D19 /* UIColor+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6AB39217B737CB00E21D19 /* UIColor+CYHelper.m */; };
 		BF6AB39717B7397100E21D19 /* UIView+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6AB39617B7397100E21D19 /* UIView+CYHelper.m */; };
 		BF6AB39817B7397100E21D19 /* UIView+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6AB39617B7397100E21D19 /* UIView+CYHelper.m */; };
+		BF9B0CED18C2E9D700321B9E /* CYHelperPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B0CEC18C2E9D700321B9E /* CYHelperPrivate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		BF6AB39517B7397100E21D19 /* UIView+CYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CYHelper.h"; sourceTree = "<group>"; };
 		BF6AB39617B7397100E21D19 /* UIView+CYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYHelper.m"; sourceTree = "<group>"; };
 		BF6AB39917B739B600E21D19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BF9B0CEB18C2E9D700321B9E /* CYHelperPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHelperPrivate.h; sourceTree = "<group>"; };
+		BF9B0CEC18C2E9D700321B9E /* CYHelperPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHelperPrivate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +280,8 @@
 				BF6AB37817B7361C00E21D19 /* NSString+CYHelper.m */,
 				BF6AB37917B7361C00E21D19 /* NSString+Tokenize.h */,
 				BF6AB37A17B7361C00E21D19 /* NSString+Tokenize.m */,
+				BF9B0CEB18C2E9D700321B9E /* CYHelperPrivate.h */,
+				BF9B0CEC18C2E9D700321B9E /* CYHelperPrivate.m */,
 				BF2C109417F12AF100A8B693 /* UIkit */,
 			);
 			name = CYHelper;
@@ -393,6 +398,7 @@
 				BF6AB37B17B7361C00E21D19 /* CYRuntimeHelper.m in Sources */,
 				BF6AB34217B7360100E21D19 /* CYAppDelegate.m in Sources */,
 				BF6AB39717B7397100E21D19 /* UIView+CYHelper.m in Sources */,
+				BF9B0CED18C2E9D700321B9E /* CYHelperPrivate.m in Sources */,
 				BF6AB38B17B7361C00E21D19 /* NSString+Tokenize.m in Sources */,
 				BF2C108717F0666A00A8B693 /* NSObject+CYNotification.m in Sources */,
 				BF6AB38517B7361C00E21D19 /* NSDictionary+CYHelper.m in Sources */,
