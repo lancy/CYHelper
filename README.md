@@ -172,11 +172,3 @@ I refer to the following code. Thank them sparked my inspiration. Thank them for
 CYHelper is available under the WTFPL license.
 
 Copyright © 2012-2014 Lancy.
-
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
-
-Ok, the purpose of this license is simple 
-and you just
-
-DO WHAT THE FUCK YOU WANT TO.
