@@ -41,13 +41,9 @@ See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeL
 
 ## API List
 ### UIDevice+CYHardware.h (NEW)
-    @interface UIDevice (CYHardware)
-
     - (NSString *)platform;
     - (CYPlatformType)platformType;
     - (NSString *)platformString;
-
-@end
 
 ### UIAlertView + CYHelper.h
     @property (strong, nonatomic) NSDictionary *userInfo;
