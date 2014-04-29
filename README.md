@@ -3,14 +3,13 @@
 CYHelper is an Objective-C library for iOS developer. It try to provides all the useful features of iOS and wrap them to be easy-to-use API.
 
 ## What's new?
-###1.1.4
-* NSArray and NSSet utils: map, filter and reject with block, flattenArray.
-* Easy to access centerY and centerX of UIView.
-* Days with in era from date to date.
+###1.1.5
+* UIDevice category for platform infomation.
 
 See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeLog.md)
 
 ## Features
+* UIDevice category for platform infomation.
 * NSArray and NSSet utils: map, filter and reject with block, flattenArray.
 * Days with in era from date to date.
 * Easy to associcated objects.
@@ -41,6 +40,15 @@ See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeL
 * Or simply drag CYHelper folder to your project, and import "CYHelper.h". Otherwise you can also add individual componet of CYHelper, just import corresponding head files.
 
 ## API List
+### UIDevice+CYHardware.h (NEW)
+    @interface UIDevice (CYHardware)
+
+    - (NSString *)platform;
+    - (CYPlatformType)platformType;
+    - (NSString *)platformString;
+
+@end
+
 ### UIAlertView + CYHelper.h
     @property (strong, nonatomic) NSDictionary *userInfo;
 ### UIActionView + CYHelper.h
@@ -101,18 +109,18 @@ See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeL
     @property (nonatomic) CGFloat centerY;
     - (void)removeAllSubviews;
 
-### NSArray + CYHelper.h (NEW)
+### NSArray + CYHelper.h
     - (NSArray *)subarrayFromIndex:(NSUInteger)index;
     - (NSArray *)subarrayToIndex:(NSUInteger)index;
     - (NSArray *)map:(id (^)(id value))handlerBlock;
     - (NSArray *)filter:(BOOL (^)(id value))handlerBlock;
     - (NSArray *)reject:(BOOL (^)(id value))handlerBlock;
     - (NSArray *)flattenArray;
-### NSSet + CYHelper.h (NEW)
+### NSSet + CYHelper.h
     - (NSSet *)map:(id (^)(id value))handlerBlock;
     - (NSSet *)filter:(BOOL (^)(id value))handlerBlock;
     - (NSSet *)reject:(BOOL (^)(id value))handlerBlock;
-### NSDate + CYHelper.h (NEW)
+### NSDate + CYHelper.h
     // example: dateFormat:@"yyyy-MM-dd 'at' HH:mm";
     // formattedDateString: 2001-01-02 at 13:00
     - (NSString *)stringWithDateFormat:(NSString *)dateFormat;
@@ -130,7 +138,7 @@ See More at [ChangeLog.md](https://github.com/lancy/CYHelper/blob/master/ChangeL
     - (NSArray *)arrayWithWordTokenize;
     - (NSString *)separatedStringWithSeparator:(NSString *)separator;
     
-### CYSystemInfo.h (NEW)
+### CYSystemInfo.h
     #define IOS7_OR_LATER	
     #define IOS6_OR_LATER	
     #define IOS5_OR_LATER	

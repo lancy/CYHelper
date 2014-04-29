@@ -1,5 +1,8 @@
 # Change Log
 
+###1.1.5
+* UIDevice category for platform infomation.
+
 ###1.1.4
 * NSArray and NSSet utils: map, filter and reject with block, flattenArray.
 * Easy to access centerY and centerX of UIView.

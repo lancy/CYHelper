@@ -23,3 +23,4 @@
 #import "UIAlertView+CYHelper.h"
 #import "UIActionSheet+CYHelper.h"
 #import "UIControl+CYHelper.h"
+#import "UIDevice+CYHardware.h"

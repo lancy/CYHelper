@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2BCAD3190FB49200F2F882 /* UIDevice+CYHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BCAD2190FB49200F2F882 /* UIDevice+CYHardware.m */; };
 		BF2C108717F0666A00A8B693 /* NSObject+CYNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C108617F0666A00A8B693 /* NSObject+CYNotification.m */; };
 		BF2C108A17F122B800A8B693 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C108917F122B800A8B693 /* NSObject+AssociatedObjects.m */; };
 		BF2C108D17F1272E00A8B693 /* UIAlertView+CYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C108C17F1272E00A8B693 /* UIAlertView+CYHelper.m */; };
@@ -67,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF2BCAD1190FB49200F2F882 /* UIDevice+CYHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CYHardware.h"; sourceTree = "<group>"; };
+		BF2BCAD2190FB49200F2F882 /* UIDevice+CYHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CYHardware.m"; sourceTree = "<group>"; };
 		BF2C108517F0666A00A8B693 /* NSObject+CYNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYNotification.h"; sourceTree = "<group>"; };
 		BF2C108617F0666A00A8B693 /* NSObject+CYNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYNotification.m"; sourceTree = "<group>"; };
 		BF2C108817F122B800A8B693 /* NSObject+AssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObjects.h"; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				BF6AB36A17B7361C00E21D19 /* CYSingletonHelper.h */,
 				BF6AB36B17B7361C00E21D19 /* CYSystemInfo.h */,
 				BF6AB36C17B7361C00E21D19 /* CYSystemInfo.m */,
+				BF2BCAD1190FB49200F2F882 /* UIDevice+CYHardware.h */,
+				BF2BCAD2190FB49200F2F882 /* UIDevice+CYHardware.m */,
 				BF6AB38D17B7376500E21D19 /* NSObject+CYHelper.h */,
 				BF6AB38E17B7376500E21D19 /* NSObject+CYHelper.m */,
 				BF6AB36D17B7361C00E21D19 /* NSArray+CYHelper.h */,
@@ -400,6 +405,7 @@
 				BF6AB39717B7397100E21D19 /* UIView+CYHelper.m in Sources */,
 				BF9B0CED18C2E9D700321B9E /* CYHelperPrivate.m in Sources */,
 				BF6AB38B17B7361C00E21D19 /* NSString+Tokenize.m in Sources */,
+				BF2BCAD3190FB49200F2F882 /* UIDevice+CYHardware.m in Sources */,
 				BF2C108717F0666A00A8B693 /* NSObject+CYNotification.m in Sources */,
 				BF6AB38517B7361C00E21D19 /* NSDictionary+CYHelper.m in Sources */,
 				BF2C109317F12A2E00A8B693 /* UIControl+CYHelper.m in Sources */,
