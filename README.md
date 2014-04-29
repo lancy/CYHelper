@@ -170,6 +170,7 @@ I refer to the following code. Thank them sparked my inspiration. Thank them for
 * [BlocksKit](https://github.com/pandamonia/BlocksKit) 
 * [BeeFramework](https://github.com/gavinkwoe/BeeFramework)
 * [REUIKitAdditions](https://github.com/romaonthego/REUIKitAdditions)
+* [iOS 6 Advanced Cookbook](https://github.com/erica/iOS-6-Advanced-Cookbook)
 
 ## License
 
