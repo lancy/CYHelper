@@ -5,6 +5,8 @@
 //  Created by Chenyu Lan on 4/29/14.
 //  Copyright (c) 2014 Fenbi.inc. All rights reserved.
 //
+//  platform info come from the iphone wiki
+//  http://theiphonewiki.com/wiki/Models
 
 #import <UIKit/UIKit.h>
 
