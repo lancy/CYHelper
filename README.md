@@ -1,4 +1,7 @@
 #CYHelper
+## **NOTE**
+This project is not longer maintained.
+
 ## About
 CYHelper is an Objective-C library for iOS developer. It try to provides all the useful features of iOS and wrap them to be easy-to-use API.
 
